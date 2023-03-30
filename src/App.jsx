@@ -7,7 +7,7 @@ import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container mx-auto w-100">
       <Header></Header>
       <Home></Home>
     </div>
