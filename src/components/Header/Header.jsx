@@ -7,7 +7,7 @@ const Header = () => {
       <nav className="navbar">
         <div className="d-flex w-100 justify-content-between align-items-center">
           <div>
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand ms-2" href="/home">
               <img src="logo.png" alt="" />
             </a>
           </div>
