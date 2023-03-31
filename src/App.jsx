@@ -8,12 +8,13 @@ import Home from "./components/Home/Home";
 function App() {
   let readingTime = 0;
   const readTimeCalculation = (time) => {
-    const previousReadingTime = JSON.parse(localStorage.getItem("readTime"));
+    const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
     readingTime = readingTime + time;
-    if (!previousReadingTime) {
+    if (!previousReadTime) {
       localStorage.setItem("readTime", time);
     } else {
-      localStorage.setItem("readTime", previousReadingTime + time);
+      const totalReadTime = previousReadTime + time;
+      localStorage.setItem("readTime", totalReadTime);
     }
   };
   return (
