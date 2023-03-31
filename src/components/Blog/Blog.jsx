@@ -1,6 +1,6 @@
 import React from "react";
 
-const Blog = ({ blog, readTimeCalculation }) => {
+const Blog = ({ blog, readTimeCalculation, handleBookmark }) => {
   const {
     id,
     authorImage,
@@ -30,6 +30,7 @@ const Blog = ({ blog, readTimeCalculation }) => {
         <div className="">
           <span>{readingTime} min read</span>{" "}
           <i
+            onClick={() => handleBookmark(blog)}
             style={{ cursor: "pointer" }}
             className="fa-regular fa-bookmark"
           ></i>

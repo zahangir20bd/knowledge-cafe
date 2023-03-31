@@ -7,25 +7,37 @@ import Home from "./components/Home/Home";
 
 function App() {
   const [readTime, setReadTime] = useState(0);
+  const [bookmarks, setBookmarks] = useState([]);
+
   let readingTime = 0;
   const readTimeCalculation = (time) => {
     const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
+
     readingTime = readingTime + time;
     if (!previousReadTime) {
-      localStorage.setItem("readTime", time);
-      setReadTime(time);
+      localStorage.setItem("readTime", readingTime);
+      setReadTime(readingTime);
     } else {
       const totalReadTime = previousReadTime + time;
       localStorage.setItem("readTime", totalReadTime);
       setReadTime(totalReadTime);
     }
   };
+
+  const handleBookmark = (blog) => {
+    const newBookmark = [...bookmarks, blog];
+    setBookmarks(newBookmark);
+    // console.log(bookmark);
+  };
+
   return (
     <div className="App container mx-auto w-100">
       <Header></Header>
       <Home
         readTimeCalculation={readTimeCalculation}
         readTime={readTime}
+        handleBookmark={handleBookmark}
+        bookmarks={bookmarks}
       ></Home>
     </div>
   );

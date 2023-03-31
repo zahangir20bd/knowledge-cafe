@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Blog from "../Blog/Blog";
 import SideCart from "../SideCart/SideCart";
 
-const Home = ({ readTimeCalculation, readTime }) => {
+const Home = ({ readTimeCalculation, readTime, handleBookmark, bookmarks }) => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
@@ -19,11 +19,12 @@ const Home = ({ readTimeCalculation, readTime }) => {
             blog={blog}
             key={blog.id}
             readTimeCalculation={readTimeCalculation}
+            handleBookmark={handleBookmark}
           ></Blog>
         ))}
       </div>
       <div className="col-12 col-md-4">
-        <SideCart readTime={readTime}></SideCart>
+        <SideCart readTime={readTime} bookmarks={bookmarks}></SideCart>
       </div>
     </div>
   );

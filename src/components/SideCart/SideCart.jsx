@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-const SideCart = ({ readTime }) => {
+const SideCart = ({ readTime, bookmarks }) => {
+  console.log(bookmarks);
   const [finalReadTime, setFinalReadTime] = useState(readTime);
   useEffect(() => {
     const getReadTime = localStorage.getItem("readTime");
@@ -12,7 +13,7 @@ const SideCart = ({ readTime }) => {
         Spent time on read: {finalReadTime}
       </h4>
       <div className="bg-success-subtle card p-4">
-        <h4>Bookmarked Blogs:</h4>
+        <h4>Bookmarked Blogs: {bookmarks.length}</h4>
       </div>
     </div>
   );
