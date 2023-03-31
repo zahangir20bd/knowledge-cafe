@@ -33,13 +33,13 @@
 },
 {
     "id": 4,
-    "authorName": "Eng. Zahangir A. Rafe",
-    "blogTitle": "Running an Open-source ChatGPT Clone on Your Laptop",
-    "images": ["https://images.unsplash.com/photo-1675865254433-6ba341f0f00b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", "https://unsplash.com/photos/7q-kE4SZzvQ", "https://images.unsplash.com/photo-1675557009875-436f71457475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"],
-    "coverImage":"https://images.unsplash.com/photo-1675865254433-6ba341f0f00b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    "authorImage": "https://outsourcemyjob.com/user_image/1573530918zahangir20bd.jpg",
-    "readingTime": 10,
-    "publishDate": "Mar 01, 2023",
-    "keyWords": "#ChatGPT #OpenAI"
+    "authorName": "Allen Helton",
+    "blogTitle": "Why API Specs Are the Backbone of Successful Development",
+    "images": ["https://images.unsplash.com/photo-1623282033815-40b05d96c903?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", "https://media.istockphoto.com/id/1317706831/photo/api-application-programming-interface-software-development-tool-business-modern-technology.jpg?s=612x612&w=is&k=20&c=8_FQWXOk_iY_5RkdJgw29_2sWghXNJRUiU5bWfholcc="],
+    "coverImage":"https://images.unsplash.com/photo-1623282033815-40b05d96c903?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "authorImage": "https://eduenglishpassport.sru.ac.th/assets/images/users/1.jpg",
+    "readingTime": 12,
+    "publishDate": "Mar 17, 2023",
+    "keyWords": "#ApplicationProgrammingInterface #API #ApplicationDevelopment"
 }
 ]

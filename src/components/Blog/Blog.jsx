@@ -1,7 +1,6 @@
 import React from "react";
 
-const Blog = (props) => {
-  console.log(props);
+const Blog = ({ blog, readTimeCalculation }) => {
   const {
     id,
     authorImage,
@@ -11,7 +10,7 @@ const Blog = (props) => {
     publishDate,
     readingTime,
     keyWords,
-  } = props.blog;
+  } = blog;
   return (
     <div className="mt-4 card p-2">
       <img className="img-fluid rounded-3" src={coverImage} alt="Cover Image" />
@@ -38,7 +37,11 @@ const Blog = (props) => {
       </div>
       <h2>{blogTitle}</h2>
       <p>{keyWords}</p>
-      <button type="button" className="btn btn-link Mark as read">
+      <button
+        onClick={() => readTimeCalculation(readingTime)}
+        type="button"
+        className="btn btn-link Mark as read"
+      >
         Mark as read
       </button>
     </div>
