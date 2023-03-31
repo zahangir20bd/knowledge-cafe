@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import Blog from "../Blog/Blog";
 import SideCart from "../SideCart/SideCart";
 
-const Home = ({ readTimeCalculation }) => {
+const Home = ({ readTimeCalculation, readTime }) => {
   const [blogs, setBlogs] = useState([]);
+
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -11,7 +12,7 @@ const Home = ({ readTimeCalculation }) => {
   }, []);
 
   return (
-    <div className="row">
+    <div style={{ position: "relative" }} className="row">
       <div className="col-12 col-md-8 bg-white">
         {blogs.map((blog) => (
           <Blog
@@ -22,7 +23,7 @@ const Home = ({ readTimeCalculation }) => {
         ))}
       </div>
       <div className="col-12 col-md-4">
-        <SideCart></SideCart>
+        <SideCart readTime={readTime}></SideCart>
       </div>
     </div>
   );
