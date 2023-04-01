@@ -70,6 +70,27 @@ const FAQBlog = () => {
           state and handle side effects in a clean and efficient way.
         </p>
       </div>
+      <div className="m-4 p-2 card">
+        <h4 className="fw-bold"> FAQ Title: How Does React work??</h4>
+        <p style={{ textAlign: "justify" }} className="px-2 ">
+          React is a JavaScript library that allow to build user interfaces in a
+          declarative and efficient way. It works by creating a virtual
+          representation of the UI which is called the Virtual DOM, and it is a
+          lightweight copy of the actual DOM. React uses this Virtual DOM to
+          compare and update only the parts of the UI that have changed, which
+          results in better performance and faster rendering. <br />
+          <br />
+          React follows a unidirectional data flow pattern, where data flows
+          only from the parent components to the child components. Each
+          component can have its own state, which allows for more modular and
+          reusable code. React also provides a set of lifecycle methods that
+          enable to control the behavior of a component during different stages
+          of its life cycle. <br /> <br /> Overall, React's efficient rendering
+          process, unidirectional data flow, and lifecycle methods make it a
+          powerful tool for building complex and responsive user interfaces with
+          ease.
+        </p>
+      </div>
     </div>
   );
 };
