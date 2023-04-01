@@ -30,7 +30,7 @@ const Blog = ({ blog, readTimeCalculation, handleBookmark }) => {
         <div className="">
           <span>{readingTime} min read</span>{" "}
           <i
-            onClick={() => handleBookmark(blog)}
+            onClick={() => handleBookmark(blog, id)}
             style={{ cursor: "pointer" }}
             className="fa-regular fa-bookmark"
           ></i>

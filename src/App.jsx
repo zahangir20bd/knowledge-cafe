@@ -24,11 +24,16 @@ function App() {
     }
   };
 
-  const handleBookmark = (blog) => {
-    const newBookmark = [...bookmarks, blog];
-    setBookmarks(newBookmark);
-
-    // console.log(bookmark);
+  const handleBookmark = (blog, id) => {
+    const isAvailable = bookmarks.find((bookmark) => bookmark.id === id);
+    if (isAvailable) {
+      alert("already exist");
+      const newBookmark = bookmarks;
+      setBookmarks(newBookmark);
+    } else {
+      const newBookmark = [...bookmarks, blog];
+      setBookmarks(newBookmark);
+    }
   };
 
   return (
