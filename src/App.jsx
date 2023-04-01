@@ -27,6 +27,7 @@ function App() {
   const handleBookmark = (blog) => {
     const newBookmark = [...bookmarks, blog];
     setBookmarks(newBookmark);
+
     // console.log(bookmark);
   };
 

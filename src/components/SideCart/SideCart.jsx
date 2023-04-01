@@ -14,6 +14,18 @@ const SideCart = ({ readTime, bookmarks }) => {
       </h4>
       <div className="bg-success-subtle card p-4">
         <h4>Bookmarked Blogs: {bookmarks.length}</h4>
+        {bookmarks.map((bookmark) => (
+          <h5
+            key={bookmark.id}
+            style={{
+              background: "white",
+              padding: "15px",
+              borderRadius: "10px",
+            }}
+          >
+            {bookmark.blogTitle}{" "}
+          </h5>
+        ))}
       </div>
     </div>
   );
